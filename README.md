@@ -12,8 +12,18 @@ This repository contains a Python implementation of an image compression project
 - **Information Loss Visualization:** Visualization of information loss against the number of principal components.
 
 ## How to Use:
+
 1. Clone the repository to your local machine.
 2. Install the required dependencies by running `pip install -r requirements.txt`.
-3. Run the `main.py` script to execute the image compression and analysis.
+3. Open the `main.py` script in your preferred text editor or integrated development environment (IDE).
+4. Locate the `folder_path` variable at the beginning of the script and update it with the path to the folder containing the Sentinel-2 band images. For example:
+
+    ```python
+    folder_path = r"your\path\to\band\images"
+    ```
+
+5. Save the changes.
+6. Run the `main.py` script to execute the image compression and analysis.
 
 Feel free to explore and modify the code to suit your specific needs. Contributions and suggestions are welcome!
+
