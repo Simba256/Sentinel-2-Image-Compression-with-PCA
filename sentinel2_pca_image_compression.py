@@ -249,7 +249,7 @@ def visualize_bands(image):
 
 # Main function to orchestrate the entire process
 def main():
-    folder_path = r"D:\GIKI\Semester 5\Linear Algebra\CEP\R60m"  # Path to folder containing band images0231119T074141.SAFE\GRANULE\L2A_T42RXU_A035009_20231119T060130\IMG_DATA\R60m"  # Path to folder containing band images
+    folder_path = r"D:\Sentinel2bands"  # Path to folder containing band images0231119T074141.SAFE\GRANULE\L2A_T42RXU_A035009_20231119T060130\IMG_DATA\R60m"  # Path to folder containing band images
     band_paths = get_band_paths(folder_path)  # Get paths of all band images
     bands = load_bands(band_paths)  # Load all bands
     stacked = np.stack(bands, axis=-1)  # Stack bands into a single image
@@ -289,3 +289,4 @@ def main():
 
 if __name__ == "__main__":
     main()  
+
